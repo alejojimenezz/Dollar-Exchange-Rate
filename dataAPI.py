@@ -25,3 +25,5 @@ results = client.get("mcec-87by", limit=2000)
 results_df = pd.DataFrame.from_records(results)
 
 print(results_df)
+
+# URL: https://www.datos.gov.co/Econom-a-y-Finanzas/Tasa-de-Cambio-Representativa-del-Mercado-Historic/mcec-87by/data_preview
