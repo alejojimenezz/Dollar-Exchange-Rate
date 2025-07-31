@@ -6,7 +6,7 @@ Project using conversion from dollar to colombian pesos
 - Pandas
 - Sodapy
 
-'''
+```
 pip install pandas
 pip install sodapy
-'''
+```
