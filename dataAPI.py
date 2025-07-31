@@ -26,4 +26,6 @@ results_df = pd.DataFrame.from_records(results)
 
 print(results_df)
 
+results_df.to_csv("tasa_cambio.csv", index = False)
+
 # URL: https://www.datos.gov.co/Econom-a-y-Finanzas/Tasa-de-Cambio-Representativa-del-Mercado-Historic/mcec-87by/data_preview
