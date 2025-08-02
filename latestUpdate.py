@@ -1,6 +1,13 @@
 import pandas as pd
 import datetime
 
+def latestUpdate(df):
+    date_pd = df.iloc[0]['vigenciadesde']
+    date_dt = pd.to_datetime(date_pd)
+    date = date_dt.date()
+    return date # , value
+
+
 df = pd.read_csv('tasa_cambio.csv')
 
 latestUpdate_pd = df.iloc[0]['vigenciadesde']
