@@ -3,7 +3,7 @@ Project using conversion from dollar to colombian pesos
 
 ## TO-DO list
 
-- [ ] Integrate latestUpdate and latestValue into one file.
+- [ ] [Integrate latestUpdate and latestValue into one file.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/1)
 - [ ] Convert existing files into functions to call from a main file.
 - [ ] Create main file with UI.
 - [ ] Graph dollar exchange rate history.
