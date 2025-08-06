@@ -1,22 +1,18 @@
-# https://tkdocs.com/tutorial/index.html
+import tkinter
 
-import tkinter as tk
-from tkinter import *
-from tkinter import ttk
+window = tkinter.Tk()
+window.geometry("400x300")
 
-#class App(tk.Frame):
-#    def __init__(self, master=None):
-#        super().__init__(master)
-#        self.pack()
+label = tkinter.Label(window, text="Label", font="Helvetica 20")
+label.grid(row=0)
 
-# myapp = App()
-# myapp.master.title("My Do-Nothing Application")
-# myapp.master.maxsize(1000, 400)
-# myapp.mainloop()
+updateStatus = tkinter.Label(window, text="updateStatus")
+updateStatus.grid(row=1, column=0)
 
-root = Tk()
-frm = ttk.Frame(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
-ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
-root.mainloop()
+updateButton = tkinter.Button(window, text="updateButton")
+updateButton.grid(row=2, column=0)
+
+# textBox = tkinter.Entry(window)
+# textBox.pack()
+
+window.mainloop()
