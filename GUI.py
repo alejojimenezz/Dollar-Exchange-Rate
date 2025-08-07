@@ -1,18 +1,23 @@
-import tkinter
+import tkinter as tk
 
-window = tkinter.Tk()
-window.geometry("400x300")
+window = tk.Tk()
+window.title = "Cambio de dolar a pesos colombianos"
+window.geometry("600x300")
 
-label = tkinter.Label(window, text="Label", font="Helvetica 20")
-label.grid(row=0)
+# window.columnconfigure(0, weight=1)
+# window.columnconfigure(1, weight=1)
+# window.columnconfigure(2, weight=1)
 
-updateStatus = tkinter.Label(window, text="updateStatus")
+label = tk.Label(window, text="Label", font=("Helvetica", 20))
+label.place(relx=0.5, rely=0.05, anchor="center")
+
+updateStatus = tk.Label(window, text="updateStatus")
 updateStatus.grid(row=1, column=0)
 
-updateButton = tkinter.Button(window, text="updateButton")
+updateButton = tk.Button(window, text="updateButton")
 updateButton.grid(row=2, column=0)
 
-# textBox = tkinter.Entry(window)
+# textBox = tk.Entry(window)
 # textBox.pack()
 
 window.mainloop()

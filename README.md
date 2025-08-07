@@ -6,6 +6,7 @@ Project using conversion from dollar to colombian pesos.
 
 - [X] [Integrate latestUpdate and latestValue into one file.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/1)
 - [X] Graph dollar exchange rate history.
+- [ ] Make GUI window mockup
 - [ ] Fix x ticks in graph to show dates instead of timestamps.
 - [ ] Create main file with GUI.
 - [ ] Convert existing files into functions to call from a main file.
