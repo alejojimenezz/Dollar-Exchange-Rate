@@ -11,7 +11,7 @@ window.geometry("600x300")
 label = tk.Label(window, text="Label", font=("Helvetica", 20))
 label.place(relx=0.5, rely=0.05, anchor="center")
 
-updateStatus = tk.Label(window, text="updateStatus")
+updateStatus = tk.Label(window, text="updateStatus", font=(20))
 updateStatus.grid(row=1, column=0)
 
 updateButton = tk.Button(window, text="updateButton")
