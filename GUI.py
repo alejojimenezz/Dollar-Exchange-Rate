@@ -17,6 +17,9 @@ updateStatus.grid(row=1, column=0)
 updateButton = tk.Button(window, text="updateButton")
 updateButton.grid(row=2, column=0)
 
+latestValue = tk.Label(window, text="latestValue")
+latestValue.grid(row=3, column=0)
+
 # textBox = tk.Entry(window)
 # textBox.pack()
 
