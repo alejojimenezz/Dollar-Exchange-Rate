@@ -4,6 +4,7 @@
 import tkinter as tk
 import pandas as pd
 import latestUpdate as lu
+import updateFunction as uf
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -30,17 +31,22 @@ updatestatus = tk.Label(master=window, text=f"{upToDate}", font=(20))
 updatestatus.config(bg="#E4E2E2", fg="#000")
 updatestatus.place(x=12, y=78, height=40)
 
+# TO-DO: check how to add command without executing file
+# updatebutton = tk.Button(master=window, text="Update", command=uf.updateDB(2000, "tasa_cambio.csv"))
 updatebutton = tk.Button(master=window, text="Update")
 updatebutton.config(bg="#E4E2E2", fg="#000")
-updatebutton.place(x=63, y=125, height=40)
+updatebutton.place(x=65, y=125, height=40)
 
-dollarvalue = tk.Label(master=window, text="Dollar Value: ")
+if (upToDate == "Database is up to date."):
+    updatebutton.config(state="disabled")
+
+dollarvalue = tk.Label(master=window, text=f"Dollar Value: {value} COP")
 dollarvalue.config(bg="#E4E2E2", fg="#000")
-dollarvalue.place(x=14, y=274, height=40)
+dollarvalue.place(x=15, y=275, height=40)
 
-updatedate = tk.Label(master=window, text="Latest update: ")
+updatedate = tk.Label(master=window, text=f"Latest update: {date}")
 updatedate.config(bg="#E4E2E2", fg="#000")
-updatedate.place(x=12, y=224, height=40)
+updatedate.place(x=15, y=225, height=40)
 
 
-window.mainloop()
+# window.mainloop()
