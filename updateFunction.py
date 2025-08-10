@@ -1,12 +1,9 @@
 import pandas as pd
 from sodapy import Socrata
 
-limit = 2000
-output = "tasa_cambio.csv"
-
-def updateDB(limit, output):
+def updateDB(numLimit, output):
     client = Socrata("www.datos.gov.co", None)
-    results = client.get("mcec-87by", limit=limit)
+    results = client.get("mcec-87by", limit=numLimit)
     results_df = pd.DataFrame.from_records(results)
     results_df.to_csv(output, index = False)
 
