@@ -11,7 +11,7 @@ def latestUpdate(df):
 
     today = datetime.date.today()
 
-    if(latestUpdate != today):
+    if(date != today):
         upToDate = "Database is NOT up to date."
     else:
         upToDate = "Database is up to date."
