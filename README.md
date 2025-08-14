@@ -10,6 +10,7 @@ Project using conversion from dollar to colombian pesos.
 - [ ] Fix x ticks in graph to show dates instead of timestamps.
 - [X] Create main file with GUI.
 - [X] Convert existing files into functions to call from a main file.
+- [ ] Use last points in regression models to predict next dollar value
 - [ ] Test PyQT for GUI
 
 ## Libraries
