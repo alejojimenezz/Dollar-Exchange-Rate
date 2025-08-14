@@ -9,7 +9,8 @@ Project using conversion from dollar to colombian pesos.
 - [X] Make GUI window mockup
 - [ ] Fix x ticks in graph to show dates instead of timestamps.
 - [X] Create main file with GUI.
-- [ ] Convert existing files into functions to call from a main file.
+- [X] Convert existing files into functions to call from a main file.
+- [ ] Test PyQT for GUI
 
 ## Libraries
 
