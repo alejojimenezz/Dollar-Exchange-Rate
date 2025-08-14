@@ -1,8 +1,16 @@
 import tkinter as tk
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import graphGUI
 
 window = tk.Tk()
 window.title = "Cambio de dolar a pesos colombianos"
-window.geometry("600x300")
+window.geometry("800x500")
+
+fig = graphGUI.get_figure()
+
+canvas = FigureCanvasTkAgg(fig, master=window)
+canvas.draw()
+canvas.get_tk_widget().grid(row=1, column=1)
 
 # window.columnconfigure(0, weight=1)
 # window.columnconfigure(1, weight=1)
