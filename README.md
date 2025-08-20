@@ -7,11 +7,12 @@ Project using conversion from dollar to colombian pesos.
 - [X] [Integrate latestUpdate and latestValue into one file.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/1)
 - [X] Graph dollar exchange rate history.
 - [X] Make GUI window mockup
-- [ ] Fix x ticks in graph to show dates instead of timestamps.
+- [ ] [Fix x ticks in graph to show dates instead of timestamps.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/2)
 - [X] Create main file with GUI.
 - [X] Convert existing files into functions to call from a main file.
 - [ ] Use last points in regression models to predict next dollar value
 - [ ] Test PyQT for GUI
+- [ ] [Fix update button to execute only when pushed.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/3)
 
 ## Libraries
 
