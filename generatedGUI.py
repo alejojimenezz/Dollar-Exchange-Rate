@@ -1,5 +1,3 @@
-# This code is generated using PyUIbuilder: https://pyuibuilder.com
-
 # import os
 import tkinter as tk
 import pandas as pd
@@ -7,6 +5,17 @@ import latestUpdate as lu
 import updateFunction as uf
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def update_and_disable():
+    uf.updateDB(2000, "tasa_cambio.csv")
+    df = pd.read_csv('tasa_cambio.csv')
+    date, value, upToDate = lu.latestUpdate(df)
+
+    updatestatus.config(text=upToDate)
+    dollarvalue.config(f"Dollar Value: {value} COP")
+    updatedate.config(text=f"Latest update: {date}")
+
+    updatebutton.config(state="disabled")
 
 df = pd.read_csv('tasa_cambio.csv')
 date, value, upToDate = lu.latestUpdate(df)
@@ -31,9 +40,7 @@ updatestatus = tk.Label(master=window, text=f"{upToDate}", font=(20))
 updatestatus.config(bg="#E4E2E2", fg="#000")
 updatestatus.place(x=12, y=78, height=40)
 
-# TO-DO: check how to add command without executing file
-# updatebutton = tk.Button(master=window, text="Update", command=uf.updateDB(2000, "tasa_cambio.csv"))
-updatebutton = tk.Button(master=window, text="Update")
+updatebutton = tk.Button(master=window, text="Update", command=update_and_disable)
 updatebutton.config(bg="#E4E2E2", fg="#000")
 updatebutton.place(x=65, y=125, height=40)
 
@@ -49,4 +56,4 @@ updatedate.config(bg="#E4E2E2", fg="#000")
 updatedate.place(x=15, y=225, height=40)
 
 
-# window.mainloop()
+window.mainloop()

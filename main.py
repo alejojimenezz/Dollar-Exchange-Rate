@@ -4,6 +4,6 @@ import generatedGUI as gengui
 
 df = pd.read_csv('tasa_cambio.csv')
 
-date, value, upToDate = lu(df)
+date, value, upToDate = lu.latestUpdate(df)
 
 gengui.window.mainloop()
