@@ -26,8 +26,10 @@ historic = historic.rename(
 
 df = pd.read_csv("tasa_cambio.csv")
 
-fullDF = pd.concat([historic, df], ignore_index=True)
+fullDF = pd.concat([df, historic], ignore_index=True)
 fullDF = fullDF.drop_duplicates()
+
+fullDF.to_csv("updateHistory.csv", index=False)
 
 if __name__ == "__main__":
     print(historic)
