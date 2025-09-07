@@ -10,4 +10,4 @@ def updateDB(numLimit, output):
     return results_df
 
 if __name__ == "__main__":
-    updateDB()
+    updateDB(2000, "tasa_cambio.csv")
