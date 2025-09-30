@@ -1,6 +1,6 @@
 import pandas as pd
 
-historic = pd.read_csv("historico.csv")
+historic = pd.read_csv("historic.csv")
 
 historic["VALOR"] = (
     historic["VALOR"]
@@ -24,7 +24,7 @@ historic = historic.rename(
     }
 )
 
-df = pd.read_csv("tasa_cambio.csv")
+df = pd.read_csv("DB_fromAPI.csv")
 
 fullDF = pd.concat([df, historic], ignore_index=True)
 fullDF = fullDF.drop_duplicates()

@@ -20,7 +20,7 @@ def latestUpdate(df):
 
 if __name__ == "__main__":
     
-    df = pd.read_csv('tasa_cambio.csv')
+    df = pd.read_csv('DB_fromAPI.csv')
 
     date, value, upToDate = latestUpdate(df)
 
