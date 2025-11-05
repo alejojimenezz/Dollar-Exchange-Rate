@@ -8,3 +8,6 @@ def updateDB(numLimit, output):
     results_df.to_csv(output, index = False)
 
     return results_df
+
+if __name__ == "__main__":
+    updateDB(2000, "DB_fromAPI.csv")

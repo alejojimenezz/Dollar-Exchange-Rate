@@ -4,7 +4,7 @@ import numpy as np
 from scipy import stats
 from sklearn.metrics import r2_score
 
-df = pd.read_csv('tasa_cambio.csv')
+df = pd.read_csv('updateHistory.csv')
 
 xpoints_pd = df.iloc[:]['vigenciadesde']
 xpoints_dt = pd.to_datetime(xpoints_pd)

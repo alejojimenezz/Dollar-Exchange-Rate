@@ -18,11 +18,12 @@ def latestUpdate(df):
 
     return date, value, upToDate
 
+if __name__ == "__main__":
+    
+    df = pd.read_csv('DB_fromAPI.csv')
 
-# df = pd.read_csv('tasa_cambio.csv')
+    date, value, upToDate = latestUpdate(df)
 
-# date, value, upToDate = latestUpdate(df)
-
-# print(date)
-# print(value)
-# print(upToDate)
+    print(date)
+    print(value)
+    print(upToDate)
