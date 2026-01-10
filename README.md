@@ -14,7 +14,11 @@ Project using conversion from dollar to colombian pesos.
 
 ## TO-DO list
 
-- [ ] Format CSV files to merge into single usable database.
+- [x] Format CSV files to merge into single usable database.
+- [ ] Introduce feature to update [FullExchangeRate.csv](/FullExchangeRate.csv) with [updateFunction.py](/updateFunction.py) output
+- [ ] Migrate [TO-DO list](#to-do-list) to GitHub issues
+- [ ] Update [README.md Use section](#use)
+- [ ] Reintroduce data graphs
 - [ ] [Fix x ticks in graph to show dates instead of timestamps.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/2)
 - [ ] Use last points in regression models to predict next dollar value.
 
