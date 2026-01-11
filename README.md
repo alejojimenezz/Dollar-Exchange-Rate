@@ -46,7 +46,9 @@ pip install sodapy
 
 ### Update
 
-To update [CSV database file](DB_fromAPI.csv), run [dataAPI.py](lib/dataAPI.py) or [updateFunction.py](updateFunction.py).
+To update [CSV database file](DB_fromAPI.csv), run [updateFunction.py](updateFunction.py).
+
+Merge [Database from API](DB_fromAPI.csv) with [Full exchange rate history](/FullExchangeRate.csv), to be implemented.
 
 #### Get update data
 
@@ -55,6 +57,10 @@ To update [CSV database file](DB_fromAPI.csv), run [dataAPI.py](lib/dataAPI.py) 
 
 ### Graph
 
+<!--
 Running [graph.py](lib/graph.py) will output graphed out data of the dollar exchange rate history, including both linear and polynomial regression lines.
 
 `r` and `r2_score` determine the linear and polynomial relation between the data respectively. The closer the number is to 1 or -1, the more relation ther is between the data.
+-->
+
+To be implemented for new version
