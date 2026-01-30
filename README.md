@@ -14,16 +14,13 @@ Project using conversion from dollar to colombian pesos.
 
 ## TO-DO list
 
-- [X] [Integrate latestUpdate and latestValue into one file.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/1)
-- [X] Graph dollar exchange rate history.
-- [X] Update database with ALL historic values.
+- [x] Format CSV files to merge into single usable database.
+- [ ] Introduce feature to update [FullExchangeRate.csv](/FullExchangeRate.csv) with [updateFunction.py](/updateFunction.py) output
+- [ ] Migrate [TO-DO list](#to-do-list) to GitHub issues
+- [ ] Update [README.md Use section](#use)
+- [ ] Reintroduce data graphs
 - [ ] [Fix x ticks in graph to show dates instead of timestamps.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/2)
-- [ ] Create main file with GUI.
-- [ ] Convert existing files into functions to call from a main file.
-- [X] Use last points in regression models to predict next dollar value.
-- [ ] Test PyQT for GUI.
-- [X] [Fix update button to execute only when pushed.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/3)
-- [ ] Implement Main file.
+- [ ] Use last points in regression models to predict next dollar value.
 
 ## Libraries
 
@@ -49,7 +46,9 @@ pip install sodapy
 
 ### Update
 
-To update [CSV database file](DB_fromAPI.csv), run [dataAPI.py](lib/dataAPI.py) or [updateFunction.py](updateFunction.py).
+To update [CSV database file](DB_fromAPI.csv), run [updateFunction.py](updateFunction.py).
+
+Merge [Database from API](DB_fromAPI.csv) with [Full exchange rate history](/FullExchangeRate.csv), to be implemented.
 
 #### Get update data
 
@@ -58,6 +57,10 @@ To update [CSV database file](DB_fromAPI.csv), run [dataAPI.py](lib/dataAPI.py) 
 
 ### Graph
 
+<!--
 Running [graph.py](lib/graph.py) will output graphed out data of the dollar exchange rate history, including both linear and polynomial regression lines.
 
 `r` and `r2_score` determine the linear and polynomial relation between the data respectively. The closer the number is to 1 or -1, the more relation ther is between the data.
+-->
+
+To be implemented for new version

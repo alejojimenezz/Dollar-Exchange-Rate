@@ -1,0 +1,13 @@
+import pandas as pd
+from sodapy import Socrata
+
+def updateDB(numLimit, output):
+    client = Socrata("www.datos.gov.co", None)
+    results = client.get("mcec-87by", limit=numLimit)
+    results_df = pd.DataFrame.from_records(results)
+    results_df.to_csv(output, index = False)
+
+    return results_df
+
+if __name__ == "__main__":
+    updateDB(2000, "DB_fromAPI.csv")
