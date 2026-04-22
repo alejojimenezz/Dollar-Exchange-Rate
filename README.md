@@ -15,10 +15,12 @@ Project using conversion from dollar to colombian pesos.
 ## TO-DO list
 
 - [x] Format CSV files to merge into single usable database.
-- [ ] Introduce feature to update [FullExchangeRate.csv](/FullExchangeRate.csv) with [updateFunction.py](/updateFunction.py) output
+- [X] Introduce feature to update [FullExchangeRate.csv](/FullExchangeRate.csv) with [updateFunction.py](/updateFunction.py) output
+  - [X] Update to work with [updateHistory.py](/updateHistory.csv)
 - [ ] Migrate [TO-DO list](#to-do-list) to GitHub issues
-- [ ] Update [README.md Use section](#use)
+- [X] Update [README.md Use section](#use)
 - [ ] Reintroduce data graphs
+  - [ ] Tag as 2.0
 - [ ] [Fix x ticks in graph to show dates instead of timestamps.](https://github.com/alejojimenezz/Dollar-Exchange-Rate/issues/2)
 - [ ] Use last points in regression models to predict next dollar value.
 
@@ -46,14 +48,14 @@ pip install sodapy
 
 ### Update
 
-To update [CSV database file](DB_fromAPI.csv), run [updateFunction.py](updateFunction.py).
+To update [CSV database file](updateHistory.csv), run [updateFunction.py](updateFunction.py) first, which updates [API's database](DB_fromAPI.csv).
 
-Merge [Database from API](DB_fromAPI.csv) with [Full exchange rate history](/FullExchangeRate.csv), to be implemented.
+Merge [Database from API](DB_fromAPI.csv) with [Full exchange rate history](updateHistory.csv), by running the file [updateExchangeHistory.py](updateExchangeHistory.py).
 
 #### Get update data
 
-- Date from [latestUpdate.date](latestUpdate.py).
-- Dollar value from [latestUpdate.value](latestUpdate.py)
+- Date from [latestUpdate.date](/Legacy/latestUpdate.py).
+- Dollar value from [latestUpdate.value](/Legacy/latestUpdate.py).
 
 ### Graph
 
