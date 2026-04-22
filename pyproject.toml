@@ -1,0 +1,11 @@
+[project]
+name = "dollar-exchange-rate"
+version = "0.1.0"
+description = "Dollar exchange rate analysis software"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.2",
+    "sodapy>=2.2.0",
+]
